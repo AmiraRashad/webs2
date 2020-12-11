@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+    h1 Add New Course
+    form(action="course/add", method="post")
+        .form-group
+            label(for= " Course Name") Course Name
+            input#name(type="text", class="form-control" name="name")
+        .form-group
+            label(for= "CourseID") Course ID
+            input#id(type="text", class="form-control" name="id")
+        .form-group
+         label(for= " Duration") Course Duration
+            input#name(type="number", class="form-control" name="Duration")
+        .form-group
+         label(for= " Fees") Course Fees(USD)
+            input#name(type="currency" class="form-control" name="Fees")
+        input(type="submit", class=" btn btn-info")
