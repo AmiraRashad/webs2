@@ -1,4 +1,4 @@
-var express = require("express");
+var express = require('express');
 var router = express.Router();
 var Course = require("../../model/course");
 router.get("/", async (req, res) => {
